@@ -71,7 +71,14 @@ class _MyHomePageState extends State<MyHomePage> {
               minimumSize: MaterialStateProperty.all(Size(200, 60)), // Minimum size for the button
             ),
             onPressed: calculateProfit,
-            child: Text('Calculate Profit!'),
+            child: Text(
+              'Calculate Profit!',
+              style: TextStyle(
+                fontSize: 16, // Set the font size
+                fontWeight: FontWeight.bold, // Set the font weight
+                fontFamily: 'Poppins', // Set the font family if you have imported a custom font
+              ),
+            ),
           ),
           SizedBox(height: 30), // Additional space after the button.
         ],
